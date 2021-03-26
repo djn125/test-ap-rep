@@ -1,0 +1,19 @@
+$white: #fff;
+$black: #2C2738;
+$dark-blue: #0880AE;
+$yellow: #F2AC57;
+$green: #14A38B;
+$red: #FF7171;
+$gray: #DBE2EA;
+$light-blue: #EBF4F8;
+$middle-blue: #7C9CBF;
+
+@mixin box-shadow-border {
+  box-shadow: 0 4px 8px #2C27380A;
+  border: 1px solid #DBE2EA;
+}
+
+@mixin box-shadow-no-border {
+  box-shadow: 0 4px 8px #2C27380A;
+  border: 1px solid #DBE2EA;
+}
