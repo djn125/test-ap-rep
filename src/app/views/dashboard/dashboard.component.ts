@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BoxType, WhiteBoxData} from '../../models/common.model';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,40 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  data = [
-    {
-      name: 'Pierdoła',
-      type: 'media',
-      cont: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-      imageLink: 'https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg',
-    }, {
-      name: 'Pierdoła',
-      type: 'regular',
-      cont: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-    }, {
-      name: 'Pierdoła',
-      type: 'media',
-      cont: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-      imageLink: 'https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg',
-    }, {
-      name: 'Pierdoła',
-      type: 'regular',
-      cont: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-    }, {
-      name: 'Pierdoła',
-      type: 'media',
-      cont: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-      imageLink: 'https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg',
-    }, {
-      name: 'Pierdoła',
-      type: 'regular',
-      cont: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-    }, {
-      name: 'Pierdoła',
-      type: 'regular',
-      cont: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-    },
-  ]
+  viewsData: WhiteBoxData = {
+    name: 'Ostatnie sesje',
+    description: '',
+    ico: 'today',
+    type: BoxType.white,
+  };
+  stateData: WhiteBoxData = {
+    name: 'Ostatnie sesje',
+    description: '',
+    ico: 'apps',
+    type: BoxType.outline,
+  };
+
+
 
   constructor() { }
 

@@ -11,9 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MenuComponent } from './components/menu/menu.component';
-import { RegularPostComponent } from './components/regular-post/regular-post.component';
-import { MediaPostComponent } from './components/media-post/media-post.component';
-import { PostTypeComponent } from './components/post-type/post-type.component'
+import { MainContentBoxComponent } from './components/main-content-box/main-content-box.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +19,7 @@ import { PostTypeComponent } from './components/post-type/post-type.component'
     DashboardComponent,
     TopMenuComponent,
     MenuComponent,
-    RegularPostComponent,
-    MediaPostComponent,
-    PostTypeComponent
+    MainContentBoxComponent
   ],
   imports: [
     BrowserModule,

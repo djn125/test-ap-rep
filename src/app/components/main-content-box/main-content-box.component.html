@@ -1,0 +1,9 @@
+<div class="content-box" [ngClass]="boxData.type ? 'outline' : 'white'">
+  <div class="title">
+    <h2><mat-icon [color]="'#756F86'">{{ boxData.ico ? boxData.ico : 'apps' }}</mat-icon>
+      {{ boxData.name }}</h2>
+  </div>
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+</div>

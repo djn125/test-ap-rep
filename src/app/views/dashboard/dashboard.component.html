@@ -1,6 +1,13 @@
 <app-top-menu>Moja aplikacja</app-top-menu>
-<div class="post-wrapper">
-  <ng-container *ngFor="let item of data">
-    <app-post-type [data]="item"></app-post-type>
-  </ng-container>
+<div class="dashboard-content-wrapper">
+  <div class="holder w2">
+    <app-main-content-box [boxData]="viewsData">
+      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+    </app-main-content-box>
+  </div>
+  <div class="holder w2">
+    <app-main-content-box [boxData]="stateData">
+      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+    </app-main-content-box>
+  </div>
 </div>
