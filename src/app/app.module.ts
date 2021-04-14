@@ -10,14 +10,20 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
-import { MenuComponent } from './components/menu/menu.component'
+import { MenuComponent } from './components/menu/menu.component';
+import { RegularPostComponent } from './components/regular-post/regular-post.component';
+import { MediaPostComponent } from './components/media-post/media-post.component';
+import { PostTypeComponent } from './components/post-type/post-type.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     TopMenuComponent,
-    MenuComponent
+    MenuComponent,
+    RegularPostComponent,
+    MediaPostComponent,
+    PostTypeComponent
   ],
   imports: [
     BrowserModule,
