@@ -8,7 +8,7 @@ import {BoxType, WhiteBoxData} from '../../models/common.model';
 })
 export class DashboardComponent implements OnInit {
   viewsData: WhiteBoxData = {
-    name: 'Ostatnie sesje',
+    name: 'Nowe komentarze',
     description: '',
     ico: 'today',
     type: BoxType.white,
